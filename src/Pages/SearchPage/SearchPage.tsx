@@ -22,7 +22,7 @@ function SearchPage(): JSX.Element {
 
   return (
     <div>
-      <h1>Search Term</h1>
+      <h1>Search a Shy Term</h1>
       <input value={searchInput} onChange={onSearchInputChange}/>
 
       <button onClick={onClickSearch}>Search </button>
