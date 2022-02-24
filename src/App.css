@@ -2,6 +2,36 @@
   text-align: center;
 }
 
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-expand .navbar-nav .nav-link {
+  padding-right: .5rem;
+  padding-left: .5rem;
+}
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.bg-myBlue{
+  background-color: rgba(68, 233, 255, 0.603);
+}
+.content{
+  padding: 12px;
+  height: 3000px;
+}
+.me-auto {
+  margin-right: auto!important;
+}
+.coloring{
+  color: black;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
