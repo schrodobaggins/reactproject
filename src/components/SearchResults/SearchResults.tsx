@@ -1,3 +1,4 @@
+import './SearchResults.css';
 
 function SearchResults(): JSX.Element {
   return (

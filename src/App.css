@@ -12,6 +12,9 @@
   padding-right: .5rem;
   padding-left: .5rem;
 }
+.button{
+  padding-left: .5rem;
+}
 .navbar-nav {
     display: flex;
     flex-direction: row;
@@ -20,7 +23,7 @@
     list-style: none;
 }
 .bg-myBlue{
-  background-color: rgba(68, 233, 255, 0.603);
+  background-color: #1A3568;
 }
 .content{
   padding: 12px;
@@ -28,6 +31,7 @@
 }
 .me-auto {
   margin-right: auto!important;
+  color: white !important;
 }
 .coloring{
   color: black;

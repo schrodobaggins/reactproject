@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { useSearchParams } from "react-router-dom";
+//import ResultsPage from '../ResultsPage/ResultsPage';
 
 import SearchResults from '../../components/SearchResults/SearchResults';
+
 
 
 function SearchPage(): JSX.Element {
@@ -22,10 +24,10 @@ function SearchPage(): JSX.Element {
 
   return (
     <div>
-      <h1>Search a Shy Term</h1>
-      <input value={searchInput} onChange={onSearchInputChange}/>
+      <h1>Home</h1>
+      <input value={searchInput} placeholder="Search a Shy Term" onChange={onSearchInputChange}/>
 
-      <button onClick={onClickSearch}>Search </button>
+      <button onClick={onClickSearch => window.location.href='../ResultsPage'}>Search </button>
 
       {searchResults && <SearchResults />}
     </div>
