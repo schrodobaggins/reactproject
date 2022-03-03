@@ -11,15 +11,19 @@ function App() {
     <>
     <div className="App">
       <Navibar/>
+      
     <Routes>
       <Route path="/" element={<SearchPage/>} />
       <Route path="/results" element={<ResultsPage/>} />
       
     </Routes>
+    
     </div>
-
+   
    </>
+   
   );
+  
 }
 
 export default App;
