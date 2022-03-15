@@ -4,7 +4,7 @@ function Navbar() {
 
   return (
     <div>
-      Nav bar
+      Shyclopidia Navbar
     </div>
   )
 }

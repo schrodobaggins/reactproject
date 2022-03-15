@@ -13,8 +13,7 @@ function App() {
     <Navbar/>
     <Routes>
       <Route path="/" element={<SearchPage/>} />
-      <Route path="/results" element={<ResultsPage/>} />
-
+      <Route path="/results/*" element={<ResultsPage/>} />
     </Routes>
     </>
   );

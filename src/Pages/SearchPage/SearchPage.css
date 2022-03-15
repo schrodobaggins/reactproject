@@ -1,0 +1,21 @@
+@import url(path/to/font-awesome/css/font-awesome.min.css);
+.searchInputs {
+    margin-top: 105px;
+    display: flex;
+  }
+  
+  .button{
+    padding-left: .10rem;
+    padding: 15px;
+  }
+  .search input {
+    background-color: white;
+    border: 0;
+    border-radius: 2px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    font-size: 18px;
+    padding: 15px;
+    height: 10px;
+    width: 300px;
+  }
