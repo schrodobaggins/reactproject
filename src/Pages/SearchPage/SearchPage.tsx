@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { useSearchParams } from "react-router-dom";
-//import './SearchPage.css';
 import { useNavigate } from "react-router-dom";
-
+import '.././SearchPage/SearchPage.css';
 
 function SearchPage(): JSX.Element {
   const navigate = useNavigate();
@@ -24,8 +23,9 @@ function SearchPage(): JSX.Element {
   }
 
   return (
+
     <div className='search'>
-      <h1>Home</h1>
+   
       <input value={searchInput} placeholder="Search a Shy Term" onChange={onSearchInputChange}/>
       <button onClick={onClickSearch}>Search </button>
     </div>

@@ -2,7 +2,6 @@ import './ResultsPage.css';
 import React, { useState } from 'react';
 import { useSearchParams } from "react-router-dom";
 
-
 import Data from "../../components/SearchResults/fake_data.json";
 
 function ResultsPage(): JSX.Element {
@@ -27,8 +26,8 @@ function ResultsPage(): JSX.Element {
 
   return (
     <div>
-     {pathArray}
-    <div>
+       <div className='search-results-for'><b>Search results for: </b> {pathArray}</div>
+      
       {Data.filter((val) => {
         if(pathArray[1] === ""){
           return val
@@ -36,12 +35,13 @@ function ResultsPage(): JSX.Element {
           return val
         }
       }).map((val,key)=>{
-        return <div>
-          <h1>{val.Name}</h1>
+        return <div className="search-results">
+          <div className="search-box"><h1>{val.Name}</h1>
          {val.Description}</div>
-        
+        </div>
       })}      
-      </div>    </div>
+      </div>    
+    
   )
 }
 
