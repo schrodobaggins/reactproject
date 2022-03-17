@@ -1,0 +1,20 @@
+.search-results{
+    text-align: center;
+  
+
+
+}
+.search-box{
+    border: 1px solid blue;
+    width: 500px;
+    height: 150px;
+    margin: 0 auto;
+
+    
+         
+}
+
+.search-results-for{
+    text-align: center;
+
+}
