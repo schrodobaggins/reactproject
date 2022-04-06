@@ -1,17 +1,19 @@
 .search-results{
     text-align: center;
-  
-
-
+    padding: 5px;
+       
 }
 .search-box{
-    border: 1px solid blue;
+    border: 1px solid rgb(115, 115, 248);
     width: 500px;
     height: 150px;
-    margin: 0 auto;
-
-    
-         
+    margin: 0 auto;  
+    border-radius: 25px;
+    background: #1b438ed2;
+     
+}
+.search-box:hover{
+    background: rgb(16, 120, 225);
 }
 
 .search-results-for{

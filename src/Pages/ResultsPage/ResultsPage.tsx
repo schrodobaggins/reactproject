@@ -1,7 +1,8 @@
 import './ResultsPage.css';
 import React, { useState } from 'react';
 import { useSearchParams } from "react-router-dom";
-
+import Pagination from 'react-bootstrap/Pagination';
+import PageItem from 'react-bootstrap/PageItem';
 import Data from "../../components/SearchResults/fake_data.json";
 
 function ResultsPage(): JSX.Element {
@@ -12,7 +13,7 @@ function ResultsPage(): JSX.Element {
   // const urlParams = new URLSearchParams(queryString);
   let pathArray = window.location.pathname.split('/results/');
   
- 
+
   
   const onSearchInputChange = ({target}: React.ChangeEvent<HTMLInputElement>) => {
     const inputValue = target.value;

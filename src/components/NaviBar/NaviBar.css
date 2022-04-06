@@ -3,12 +3,14 @@
     flex-wrap: inherit;
     align-items: center;
     justify-content: space-between;
+    
   }
   .navbar-expand .navbar-nav .nav-link {
     padding-right: .5rem;
     padding-left: .5rem;
   }
   
+
   .navbar-nav {
       display: flex;
       flex-direction: row;
@@ -19,6 +21,11 @@
   .navbar-text{
     color: white !important;
   }
+  .navbar-text:hover{
+    color: blue !important;
+  }
+
+
   .me-auto {
     margin-right: auto!important;
     color: white !important;
