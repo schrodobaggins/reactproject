@@ -3,14 +3,14 @@ import { Routes, Route } from "react-router-dom";
 
 import SearchPage from './Pages/SearchPage/SearchPage';
 import ResultsPage from './Pages/ResultsPage/ResultsPage';
-import Navbar from './components/Navbar/Navbar';
+import NavBar from './components/NaviBar/NaviBar';
 
 import './App.css';
 
 function App() {
   return (
     <>
-    <Navbar/>
+    <NavBar/>
     <Routes>
       <Route path="/" element={<SearchPage/>} />
       <Route path="/results/*" element={<ResultsPage/>} />

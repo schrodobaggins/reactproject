@@ -1,0 +1,54 @@
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+  }
+ 
+  .nav-link {
+    display: block;
+    padding: .5rem 1rem;
+    font-family: 'Varela Round', sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    transition-property: color, background-color, border-color;
+    transition-duration: 0.15s, 0.15s, 0.15s;
+    transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
+    transition-delay: 0s, 0s, 0s;
+}
+  .navbar-expand .navbar-nav .nav-link {
+    padding-right: .5rem;
+    padding-left: .5rem;
+  }
+  .navbar-nav {
+      display: flex;
+      flex-direction: row;
+      padding-left: 0;
+      margin-bottom: 0;
+      list-style: none;
+  }
+  .bg-myBlue{
+    background-color: rgb(0, 0, 0);
+  }
+  .content{
+    padding: 12px;
+    height: 3000px;
+  }
+  .me-auto {
+    margin-right: auto!important;
+    color: white !important;
+  }
+  
+  .navbar-brand>img {
+    height: 100%;
+    padding: 15px; /* firefox bug fix */
+    width: auto;
+  }
+  .logo-image{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+}
