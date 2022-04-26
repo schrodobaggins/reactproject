@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useSearchParams } from "react-router-dom";
 //import './SearchPage.css';
 import { useNavigate } from "react-router-dom";
+import {Button} from 'react-bootstrap';
 import '.././SearchPage/SearchPage.css';
 import {initializeApp} from 'firebase/app';
 import { getFirestore, doc, setDoc } from 'firebase/firestore'
@@ -44,15 +45,18 @@ function SearchPage(): JSX.Element {
 
   const onClickSearch = () => {
     // setSearchParams({search: searchInput});
+    if(searchInput === ""){
+      alert("Please insert a Shy term, search field is empty")
+    }else{
     navigate(`/results/${searchInput}`, )
-    
+    }
   }
   
  
   return (
     <div className='search'>
       <input onKeyPress={keyDownHandler} value={searchInput} placeholder="Search a Shy Term" onChange={onSearchInputChange}/>
-      <button onClick={onClickSearch}>Search </button>
+      <Button variant="primary" onClick={onClickSearch}>Search </Button>
     </div>
 
   );
